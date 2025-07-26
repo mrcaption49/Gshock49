@@ -146,14 +146,77 @@
       color: #fff;
     }
 
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .wrapper {
+        padding: 40px 15px;
+      }
+
+      .container {
+        gap: 30px;
+        padding: 30px;
+      }
+
+      .product-meta h2 {
+        font-size: 28px;
+      }
+
+      .price {
+        font-size: 22px;
+      }
+    }
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
         padding: 20px;
       }
 
-      .right, .left {
+      .left, .right {
+        flex: 1 1 100%;
         max-width: 100%;
+      }
+
+      .product-meta h2 {
+        font-size: 24px;
+      }
+
+      .price {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrapper {
+        padding: 20px 10px;
+      }
+
+      .container {
+        padding: 15px;
+        gap: 20px;
+      }
+
+      .product-meta h2 {
+        font-size: 20px;
+      }
+
+      .price {
+        font-size: 18px;
+      }
+
+      .btn-primary,
+      .btn-outline {
+        font-size: 14px;
+        padding: 12px 0;
+      }
+
+      .thumb-carousel img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .description {
+        font-size: 13px !important;
       }
     }
   </style>
@@ -182,32 +245,23 @@
           <img src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/D/DW/DW5/dw-5600rl-1/assets/DW-5600RL-1_bustup.jpg" onclick="changeImage(this)">
         </div>
       </div>
-<div class="right">
-  <div class="price">₹7,995</div>
-  <div class="description" style="font-size: 14px; color: #444; line-height: 1.6;">
-    <strong>G-SHOCK Description:</strong><br>
-    An ever-popular classic that carries on the very first G-SHOCK design. The original color scheme is faithfully reproduced with touches of G-SHOCK red, representing the passion to take on challenges; blue, symbolizing excellent water resistance; and yellow, signifying outstanding shock resistance.
-  </div>
-  <div class="rating">
-    4.9 <span class="stars">★★★★☆</span> <span class="reviews">(1250)</span>
-  </div>
 
-  <!-- BUY NOW Button -->
-  <a href="https://www.casio.com/in/watches/gshock/product.DW-5600RL-1/" target="_blank" class="btn-primary" style="text-align: center; text-decoration: none; display: inline-block; padding: 14px 0;">BUY NOW 🛒</a>
+      <div class="right">
+        <div class="price">₹7,995</div>
+        <div class="description" style="font-size: 14px; color: #444; line-height: 1.6;">
+          <strong>G-SHOCK Description:</strong><br>
+          An ever-popular classic that carries on the very first G-SHOCK design. The original color scheme is faithfully reproduced with touches of G-SHOCK red, representing the passion to take on challenges; blue, symbolizing excellent water resistance; and yellow, signifying outstanding shock resistance.
+        </div>
+        <div class="rating">
+          4.9 <span class="stars">★★★★☆</span> <span class="reviews">(1250)</span>
+        </div>
 
-  <!-- WHERE TO BUY Button -->
-  <a href="https://www.casio.com/in/watches/gshock/" target="_blank" class="btn-outline" style="text-align: center; text-decoration: none; display: inline-block; padding: 14px 0;">WHERE TO BUY</a>
-</div>
+        <a href="https://www.casio.com/in/watches/gshock/product.DW-5600RL-1/" target="_blank" class="btn-primary" style="text-align: center; text-decoration: none; display: inline-block; padding: 14px 0;">BUY NOW 🛒</a>
 
-
-
+        <a href="https://www.casio.com/in/watches/gshock/" target="_blank" class="btn-outline" style="text-align: center; text-decoration: none; display: inline-block; padding: 14px 0;">WHERE TO BUY</a>
+      </div>
     </div>
-	
-	
-	
   </div>
-
-  
 
   <script>
     function changeImage(el) {
