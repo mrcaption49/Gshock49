@@ -146,62 +146,32 @@
       color: #fff;
     }
 
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 1024px) {
-      .wrapper {
-        padding: 40px 15px;
-      }
-
-      .container {
-        gap: 30px;
-        padding: 30px;
-      }
-
-      .product-meta h2 {
-        font-size: 28px;
-      }
-
-      .price {
-        font-size: 22px;
-      }
-    }
-
+    /* RESPONSIVENESS */
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
         padding: 20px;
       }
 
-      .left, .right {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-
-      .product-meta h2 {
-        font-size: 24px;
-      }
-
-      .price {
-        font-size: 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
       .wrapper {
         padding: 20px 10px;
       }
 
-      .container {
-        padding: 15px;
-        gap: 20px;
+      .left, .right {
+        max-width: 100%;
+        flex: 1 1 100%;
       }
 
       .product-meta h2 {
-        font-size: 20px;
+        font-size: 26px;
       }
 
       .price {
-        font-size: 18px;
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 13px !important;
       }
 
       .btn-primary,
@@ -214,9 +184,29 @@
         width: 50px;
         height: 50px;
       }
+    }
 
-      .description {
-        font-size: 13px !important;
+    @media (max-width: 480px) {
+      .product-meta h2 {
+        font-size: 22px;
+      }
+
+      .price {
+        font-size: 18px;
+      }
+
+      .btn-primary,
+      .btn-outline {
+        font-size: 13px;
+      }
+
+      .thumb-carousel {
+        gap: 8px;
+      }
+
+      .thumb-carousel img {
+        width: 45px;
+        height: 45px;
       }
     }
   </style>
@@ -246,6 +236,7 @@
         </div>
       </div>
 
+      <!-- Right Section: Price, Description, Buttons -->
       <div class="right">
         <div class="price">₹7,995</div>
         <div class="description" style="font-size: 14px; color: #444; line-height: 1.6;">
